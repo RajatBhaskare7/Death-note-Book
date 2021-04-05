@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Death Note</title>
+		<link rel="stylesheet" href="deathnote.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+<body>
+	<header>
+		<p>Click card to open</p>
+	</header>
+<div class="card__container js-card-opener">
+  <div class="card">
+    <div class="card__panel card__panel--front">
+      <h1><img src="dn.jpg"></h1>
+    </div>
+    <div class="card__panel card__panel--inside-left">
+    </div>
+    <div class="card__panel card__panel--inside-right">
+      <p class="names"></p>
+	  <h2>Never trust anyone !</h2>
+	 
+	  <h3 id="demo"></h3>
+	  </div>
+  </div>
+
+</div>
+
+<script>
+const openBtn = document.querySelector(".js-card-opener");
+
+openBtn.onclick = function () {
+  document.body.classList.toggle("open");
+};
+</script>
+<script>
+	var name= prompt("enter your name");
+	document.querySelector('.names').innerHTML=name;
+	
+</script>
+<script>
+	var num=45;
+	while(num>=1){
+		num--;
+	}
+	document.querySelector('#demo').innerHTML=num;
+	
+</script>
+</body>
+</html>
